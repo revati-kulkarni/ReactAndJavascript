@@ -3,11 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./components/App.js";
 import reportWebVitals from "./reportWebVitals.js";
+import MyForm from "./components/forms/Form.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App></App>
+    <MyForm></MyForm>
   </React.StrictMode>
 );
 
