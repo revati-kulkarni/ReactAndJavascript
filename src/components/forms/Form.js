@@ -21,7 +21,13 @@ function InputForm() {
       <li>
         Age <input></input>
       </li>
-      <button type="submit">Search</button>
+      <li>
+        Gender <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label>
+      </li>
+      <button type="submit">Submit</button>
     </form>
   );
 }
