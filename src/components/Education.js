@@ -1,3 +1,5 @@
+import "./App.css";
+
 const schools = [
   {
     id: 1,
@@ -11,12 +13,14 @@ const schools = [
   },
 ];
 let schoolname = [];
-for (let e of schools) {
-  <ol key={e.id}>
-    {schoolname.push(`${e.name}: ${e.course}`)};{schoolname.push(<br></br>)};
-  </ol>;
+for (let e = 0; e < schools.length; e++) {
+  schoolname.push(
+    <li key={e}>
+      {schools[e].name}: {schools[e].course}
+    </li>
+  );
 }
 function Education() {
-  return <li> {schoolname}</li>;
+  return <ol className="Education">{schoolname}</ol>;
 }
 export default Education;

@@ -8,7 +8,6 @@ let listItems = [];
 for (let e = 0; e < skills.length; e++) {
   let item = <li key={skills[e].id}>{skills[e].title}</li>;
   listItems.push(item);
-  console.log("item", item);
 }
 
 function Skillset() {

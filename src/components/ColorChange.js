@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 export default function ColorChange() {
   const [Bgcolor, setColor] = useState("#FFFFFF");
   const getRandomColor = function () {
@@ -9,15 +9,17 @@ export default function ColorChange() {
     }
     return color;
   };
+  useEffect(() => {
+    document.body.style.background = Bgcolor;
+  }, [Bgcolor]);
+
   const handleChangeColor = () => {
     const newColor = getRandomColor();
     setColor(newColor);
   };
   return (
-    <div style={{ backgroundColor: Bgcolor, display: "flex" }}>
-      <button onClick={handleChangeColor} style={{ backgroundColor: "aqua" }}>
-        Change Color
-      </button>
+    <div style={{ backgroundColor: Bgcolor }} className="Color">
+      <button onClick={handleChangeColor}>Change Color</button>
     </div>
   );
 }

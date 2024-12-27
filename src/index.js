@@ -3,15 +3,12 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./components/App.js";
 import reportWebVitals from "./reportWebVitals.js";
-import MyForm from "./components/forms/Form.js";
-import ColorChange from "./components/ColorChange.js";
+import "../src/components/App.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App></App>
-    <MyForm></MyForm>
-    <ColorChange></ColorChange>
+    <App className="MyApp"></App>
   </React.StrictMode>
 );
 

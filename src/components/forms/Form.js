@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../App.css";
 
 export default function MyForm() {
   const [showForm, setFormShow] = useState(false);
@@ -14,12 +15,12 @@ export default function MyForm() {
 }
 function InputForm() {
   return (
-    <form>
+    <form className="Form">
       <li>
         Name <input name="query" />
       </li>
       <li>
-        Age <input></input>
+        Age <input type="number" placeholder="Only Number Allowed" />
       </li>
       <li>
         Gender <input type="radio" id="male" name="gender" />

@@ -1,13 +1,17 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-.MyApp {
-  color: aqua;
+h5 {
+  margin-bottom: 2px; /* Reduce the bottom margin of the headings */
+}
+h3 {
+  height: 30px;
+  display: flex;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,10 +19,18 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.MyApp {
+  height: 100px;
+  border-width: 3px;
+  margin: 10px;
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+}
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20mm;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,4 +50,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Form {
+  display: table;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 200px;
+}
+.Color {
+  margin: 10px;
+  display: flex;
+  width: 200px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 15px;
+  width: 190px;
 }
