@@ -8,10 +8,11 @@ import Square from "./tic-tac-toe/Square";
 function App() {
   return (
     <>
-      <div className="MyApp">
-        <header className="App-header">
+      <table className="MyApp">
+        <th className="App-header">
           <h1>WELCOME TO MY PROFILE</h1>
-        </header>
+        </th>
+
         <h3>
           Hi my name is {user.name} and I work as {user.role}
         </h3>
@@ -25,7 +26,7 @@ function App() {
         <ColorChange className="Color"></ColorChange>
         <h5>TicTacToe</h5>
         <Square className="TicTacToe"></Square>
-      </div>
+      </table>
     </>
   );
 }
