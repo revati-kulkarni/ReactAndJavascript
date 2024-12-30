@@ -68,3 +68,12 @@ button {
   font-size: 15px;
   width: 190px;
 }
+.square {
+  width: 50px;
+  font-size: medium;
+  font-style: normal;
+  font-family: 'Courier New', Courier, monospace;
+}
+.board-row{
+  width: 200px;
+}
