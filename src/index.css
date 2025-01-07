@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  flex-direction: row;
 }
 
 code {
@@ -14,4 +15,5 @@ code {
 
 .Index {
   gap: 10mm; /* Adjust the gap as needed */
+  flex-direction: row;
 }

@@ -9,7 +9,7 @@ export default function MyForm() {
   return (
     <>
       <button onClick={handleClick}>Click To See Form</button>
-      {showForm && <InputForm></InputForm>}
+      {showForm && <InputForm />}
     </>
   );
 }

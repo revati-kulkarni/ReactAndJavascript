@@ -20,7 +20,6 @@ h3 {
   }
 }
 .MyApp {
-  background-color: #323428;
   min-height: 20mm;
   display: flex;
   flex-direction: column;
@@ -54,11 +53,11 @@ h3 {
   }
 }
 .Form {
-  display: table;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  width: 200px;
+  height: 100vh; /* Full viewport height to center vertically */
+  z-index: 1; /* Ensure the form is on top */
 }
 .Color {
   margin: 10px;
@@ -67,8 +66,7 @@ h3 {
 }
 button {
   padding: 10px 20px;
-  font-size: 15px;
-  width: 190px;
+  font-size: 16px;
 }
 .square {
   width: 50px;
@@ -81,7 +79,6 @@ button {
 .board-row {
   width: 150px;
   height: 50px;
-
 }
 
 .TicTacToe {
@@ -89,4 +86,49 @@ button {
   font-size: calc(10px + 2vmin);
   color: white;
   font-size: calc(10px + 2vmin);
+}
+.MyApp {
+  display: table;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20mm;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 20px; /* Add some space below the header */
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px; /* Add some space below the form */
+}
+
+.Color-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px; /* Add some space below the color change component */
+}
+
+footer {
+  margin-top: 20px; /* Add some space above the footer */
+  text-align: center;
+  width: 100%;
+}
+
+.align {
+  flex-direction: row;
 }
